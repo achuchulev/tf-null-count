@@ -27,7 +27,7 @@ terraform init
 * create `terraform.tfvars` file and specify the number of resources you want to create assigning value to `multiple` variable like shown below. If `.tfvars` file is missing `terraform apply` will create two resources as defined within the default value of `multiple` variable
 
 ```
-multiple = 2
+multiple = 3
 ```
 
 * check execution plan

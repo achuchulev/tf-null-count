@@ -3,6 +3,6 @@ resource "null_resource" "MultiHelloWorld" {
     uuid = uuid()
   }
   provisioner "local-exec" {
-    command = "ls -la ${path.root}"
+    command = "ls -la ../../"
   }
 }

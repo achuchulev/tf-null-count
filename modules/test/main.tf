@@ -3,6 +3,6 @@ resource "null_resource" "MultiHelloWorld" {
     uuid = uuid()
   }
   provisioner "local-exec" {
-    command = "ls -la ../../"
+    command = "cat ../../variables.tf"
   }
 }

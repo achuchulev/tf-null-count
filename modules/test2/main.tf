@@ -4,6 +4,9 @@ data "tfe_outputs" "generic" {
 }
 
 resource "null_resource" "test" {
+  triggers = {
+    uuid = uuid()
+  }
   provisioner "local-exec" {
     command = "echo ${data.tfe_outputs.generic.values.generic_name}"
   }

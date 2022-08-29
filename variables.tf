@@ -1,3 +1,3 @@
 variable "multiple" {
-  default = 2
+  default = 1
 }

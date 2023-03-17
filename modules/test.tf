@@ -3,6 +3,6 @@ resource "null_resource" "MultiHelloWorld" {
     uuid = uuid()
   }
   provisioner "local-exec" {
-    command = "echo test"
+    command = "echo ${TFC_WORKSPACE}"
   }
 }

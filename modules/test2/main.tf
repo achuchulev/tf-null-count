@@ -21,3 +21,8 @@ resource "null_resource" "test" {
     command = "echo ${data.tfe_outputs.generic.values.generic_name}"
   }
 }
+
+resource "random_pet" "generic" {
+  length    = "3"
+  separator = "-"
+}

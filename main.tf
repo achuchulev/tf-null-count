@@ -6,6 +6,7 @@ resource "null_resource" "MultiHelloWorld" {
     #command = "which python"
     #command = "which python3"
     #command = "whereis python3"
-    command = "echo Workspace name: ${terraform.workspace}"
+    #command = "echo Workspace name: ${terraform.workspace}"
+    command = "This is a test"
   }
 }
